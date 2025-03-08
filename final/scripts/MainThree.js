@@ -1,4 +1,4 @@
-import { OrthographicCamera, Scene, WebGLRenderer } from "three";
+import { ACESFilmicToneMapping, OrthographicCamera, Scene, WebGLRenderer } from "three";
 
 import { DomElements } from "./constants/DomElements";
 import { ExtendedObject3D } from "./utils/ExtendedObject3D";
@@ -64,6 +64,7 @@ export class MainThree {
       powerPreference: "high-performance",
     });
 
+    this.#_Renderer.toneMapping = ACESFilmicToneMapping;
     this.#_Renderer.setSize(window.innerWidth, window.innerHeight);
     this.#_Renderer.setPixelRatio(window.devicePixelRatio);
   }

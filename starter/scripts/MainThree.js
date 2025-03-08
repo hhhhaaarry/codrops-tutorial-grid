@@ -109,5 +109,9 @@ export class MainThree {
   static get Canvas() {
     return this.#_Renderer.domElement;
   }
+
+  static get Aspect() {
+    return this
+  }
   // #endregion
 }

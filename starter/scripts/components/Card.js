@@ -5,11 +5,7 @@ export class Card extends ExtendedObject3D {
     super();
   }
 
-  resize(event) {
+  resize(event) {}
 
-  }
-
-  update(dt) {
-    
-  }
+  update(dt) {}
 }
