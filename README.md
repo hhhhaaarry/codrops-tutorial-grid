@@ -1,4 +1,4 @@
-# Codrops Tutorial - [Your Tutorial Title]
+# Building an interactive image grid with Three.js
 
 The repository is organized into two folders:
 
