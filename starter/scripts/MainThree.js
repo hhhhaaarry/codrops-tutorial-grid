@@ -69,7 +69,12 @@ export class MainThree {
   }
 
   static #_CreateCamera() {
-    this.#_Camera = new OrthographicCamera(-1, 1, 1, -1);
+    this.#_Camera = new OrthographicCamera(
+      -1, // left
+      1, // right
+      1, // top
+      -1 // bottom
+    );
     this.#_Camera.position.z = 5;
   }
 
@@ -111,7 +116,7 @@ export class MainThree {
   }
 
   static get Aspect() {
-    return this
+    return this;
   }
   // #endregion
 }
